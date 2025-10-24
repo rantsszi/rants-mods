@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rants's Modded Stuff</title>
+  <title>Rants's Modded Stuff 🎃</title>
 
   <!-- ✅ Social Embed -->
-  <meta property="og:title" content="Rants Modded Stuff" />
-  <meta property="og:description" content="Modded VR Games by Rants — All in one clean website." />
+  <meta property="og:title" content="Rants's Modded Stuff - Halloween Edition" />
+  <meta property="og:description" content="Spooky Modded VR Games by Rants — Halloween vibes only." />
   <meta property="og:url" content="https://rantsszi.github.io/rants-mods/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://raw.githubusercontent.com/rantsszi/rants-mods/main/rantsserverpfp.png" />
@@ -17,8 +17,8 @@
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Rants's Modded Stuff" />
-  <meta name="twitter:description" content="Modded VR Games by Rants — All in one clean website." />
+  <meta name="twitter:title" content="Rants's Modded Stuff 🎃" />
+  <meta name="twitter:description" content="Spooky Modded VR Games by Rants — Halloween Edition." />
   <meta name="twitter:image" content="https://raw.githubusercontent.com/rantsszi/rants-mods/main/rantsserverpfp.png" />
 
   <!-- Google Fonts -->
@@ -27,45 +27,58 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      color: #eee;
+      background: radial-gradient(circle at top, #1b0c0c, #0d0202 70%);
+      color: #f9e7c2;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
 
     header {
       padding: 40px 20px;
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(90deg, #2b0000, #1a0000);
+      box-shadow: 0 0 25px #ff6a00aa;
       text-align: center;
       margin-bottom: 30px;
+      border-bottom: 2px solid #ff6600;
     }
 
     h1 {
       font-size: 3rem;
       letter-spacing: 2px;
-      text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+      color: #ffb347;
+      text-shadow: 0 0 15px #ff6600, 0 0 25px #ff3300;
       margin: 0;
+      animation: flicker 2s infinite;
     }
 
-    /* ✨ Discord button */
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 10px #ff6600, 0 0 20px #ff3300;
+      }
+      20%, 24%, 55% {
+        text-shadow: none;
+      }
+    }
+
+    /* 👻 Discord button */
     .discord-btn {
       display: inline-block;
       margin-top: 15px;
       padding: 10px 20px;
-      background-color: #5865F2;
-      color: white;
+      background-color: #ff6600;
+      color: #1a0000;
       font-weight: 600;
       text-decoration: none;
       border-radius: 8px;
-      box-shadow: 0 0 10px #5865F2aa;
-      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 0 15px #ff6600aa;
+      transition: all 0.3s ease;
     }
 
     .discord-btn:hover {
-      background-color: #4752C4;
-      transform: translateY(-3px);
-      box-shadow: 0 0 15px #5865F2;
+      background-color: #ff8533;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 25px #ff9900;
     }
 
     #searchBar {
@@ -77,17 +90,17 @@
       border: none;
       border-radius: 10px;
       outline: none;
-      background-color: #2a2a3a;
-      color: #ddd;
+      background-color: #2a1300;
+      color: #ffcc99;
       display: block;
-      box-shadow: inset 0 0 8px #0008;
-      transition: background-color 0.3s ease;
+      box-shadow: inset 0 0 8px #0008, 0 0 15px #ff660088;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
     #searchBar:focus {
-      background-color: #393951;
-      box-shadow: 0 0 12px #82ff9e;
-      color: #fff;
+      background-color: #3a1a00;
+      box-shadow: 0 0 15px #ff9933, 0 0 30px #ff6600;
+      color: #fff6e5;
     }
 
     .game-container {
@@ -100,15 +113,17 @@
     }
 
     .platform {
-      background: linear-gradient(145deg, #2a2a3a, #1c1c29);
+      background: linear-gradient(145deg, #1a0800, #2b0f00);
       border-radius: 15px;
       padding: 10px;
-      box-shadow: 5px 5px 15px #161621, -5px -5px 15px #393951;
-      transition: box-shadow 0.3s ease;
+      box-shadow: 5px 5px 15px #000, -5px -5px 15px #331a00;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      border: 1px solid #ff660022;
     }
 
     .platform:hover {
-      box-shadow: 5px 5px 25px #505070, -5px -5px 25px #7a7ab0;
+      box-shadow: 0 0 25px #ff660088, 0 0 40px #ff9933;
+      transform: translateY(-4px);
     }
 
     .game-link {
@@ -118,7 +133,7 @@
     }
 
     .game-card {
-      background: #1c1c29;
+      background: #120600;
       padding: 22px 24px;
       border-radius: 12px;
       position: relative;
@@ -126,26 +141,27 @@
       flex-direction: column;
       justify-content: center;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
-      box-shadow: inset 0 0 5px #0008;
+      box-shadow: inset 0 0 10px #ff330022;
       min-height: 130px;
     }
 
     .game-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 0 25px #82ff9e;
+      box-shadow: 0 0 25px #ff6600, 0 0 35px #ff3300;
     }
 
     .game-title {
       font-size: 1.4rem;
       font-weight: 600;
       margin-bottom: 8px;
-      color: #dfffe0;
+      color: #ffe9c6;
       user-select: none;
+      text-shadow: 0 0 8px #ff9900aa;
     }
 
     .game-status {
       font-size: 1rem;
-      color: #b7d8c8;
+      color: #ffb347;
       user-select: none;
       display: inline-block;
       margin-left: 12px;
@@ -153,7 +169,7 @@
     }
 
     .game-status a {
-      color: #82ff9e;
+      color: #ff6600;
       text-decoration: none;
       font-weight: 600;
       margin-left: 4px;
@@ -161,8 +177,10 @@
 
     .game-status a:hover {
       text-decoration: underline;
+      color: #ff9933;
     }
 
+    /* 🟢 Keep original status circles */
     .status-circle {
       width: 16px;
       height: 16px;
@@ -179,14 +197,15 @@
     .status-circle.purple { background-color: #9b59b6; box-shadow: 0 0 10px #9b59b6aa; }
 
     footer {
-      background-color: rgba(0,0,0,0.5);
-      color: #bbb;
+      background-color: rgba(20, 0, 0, 0.8);
+      color: #ffcc99;
       padding: 18px 20px;
       text-align: center;
       font-size: 14px;
       letter-spacing: 0.5px;
       user-select: none;
       box-shadow: inset 0 1px 3px #0008;
+      border-top: 1px solid #ff660022;
     }
 
     @media (max-width: 600px) {
@@ -197,7 +216,7 @@
 </head>
 <body>
   <header>
-    <h1>Rants's Modded Stuff</h1>
+    <h1>🎃 Rants's Modded Stuff 🎃</h1>
     <a href="https://discord.gg/tBCwKfxAU3" target="_blank" rel="noopener noreferrer" class="discord-btn">
       💬 Join our Discord
     </a>
@@ -287,14 +306,13 @@
   </div>
 
   <footer>
-    © 2025 Rants | All rights reserved.
+    👻 © 2025 Rants | Halloween Edition | All rights reserved 🕸️
   </footer>
 
   <script>
     function searchGames() {
       const input = document.getElementById('searchBar').value.toLowerCase();
       const cards = document.querySelectorAll('.platform');
-
       cards.forEach(platform => {
         const title = platform.querySelector('.game-title').textContent.toLowerCase();
         platform.style.display = title.includes(input) ? '' : 'none';
